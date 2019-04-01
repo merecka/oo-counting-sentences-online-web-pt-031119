@@ -27,5 +27,5 @@ class String
   # #   split_array = self.split(/\W+/)
   #   binding.pry
   #   split_array.count { |x| x.end_with?(".","?", "!")}
-  # end
+  end
 end
