@@ -16,7 +16,10 @@ class String
 
   def count_sentences
     split_array = []
-    split_array = self.split(" ")
+    split_array = self.split(" ").strip
+    split_array.each do |x|
+      x.slice(/\w+\W/)
+    end
     split_array = self.slice(/\w+\W/)
   #  split_array = self.split(/\W+\s/)
   #   split_array = self.split(/\W+/)
