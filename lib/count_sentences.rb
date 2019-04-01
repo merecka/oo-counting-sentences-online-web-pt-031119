@@ -17,6 +17,7 @@ class String
   def count_sentences
     split_array = []
     split_array = self.split(" ").strip
+    binding.pry
     split_array.each do |x|
       x.slice(/\w+\W/)
     end
