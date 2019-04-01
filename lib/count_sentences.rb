@@ -15,6 +15,9 @@ class String
   end
 
   def count_sentences
-
+    split_array = []
+    split_array = self.split(/\W+\s/)
+  #  binding.pry
+    split_array.count { |x| x.end_with?(".","?", "!")}
   end
 end
